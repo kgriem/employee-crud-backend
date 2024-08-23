@@ -16,7 +16,7 @@ public class EmployeeController {
     @Autowired
     private EmployeeService employeeService;
 
-    @GetMapping
+    @GetMapping("/all")
     public ResponseEntity<List<Employee>>getAllEmployees(){
         return new ResponseEntity<>(this.employeeService.getAllEmployees(), HttpStatus.OK);
     }
