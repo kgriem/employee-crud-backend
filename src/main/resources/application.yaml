@@ -1,0 +1,21 @@
+server:
+  port: 9000
+
+
+spring:
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+  #  security:
+  #    user:
+  #      name: john
+  #      password: 123
+  #      roles: ADMIN
+  datasource:
+    url: jdbc:mysql://localhost:3306/blogdb
+    username: root
+    password: gri82625
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate.ddl-auto: update
+    show-sql: true
